@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projeto Veículo</title>
+
+<link rel="stylesheet" href="css/style_veiculo.css">
+
+<script src="js/script_veiculo.js" type="module" defer></script>
+
 </head>
 <body>
+    <div id="geral">
+        <h3>Cálculo Seguro e IPVA Automotivo</h3>
+        <div id="div-regras">
+            <p>Seguro: 10% do valor do veículo</p>
+            <p>IPVA Gasolina: 20%</p>
+            <p>IPVA Etanol: 15%</p>
+            <p>IPVA Bicombustível: 10%</p>
+            <p>IPVA Híbrido: 8%</p>
+            <p>IPVA Elétrico: 2%</p>
+            <p>Veículos com mais de 20 anos são isentos de IPVA</p>
+        </div>
+
+        <div id="div-form-veiculo">
+            <form id="form-veiculo">
+                <label for="marca">Marca</label>
+                <input type="text" name="marca" id="marca" required>
+
+                <label for="modelo">Modelo</label>
+                <input type="text" name="modelo" id="modelo" required>
+
+                <label for="placa">Placa</label>
+                <input type="text" name="placa" id="placa" required>
+
+                <label for="ano">Ano de Fabricação</label>
+                <input type="number" name="ano" id="ano" required>
+
+                <label for="valor">Valor do Veículo</label>
+                <input type="number" name="valor" id="valor" required>
+              
+                <p>Combustível</p>
+
+              <input type="radio" name="combustivel" id="gasolina" value="gasolina" checked>
+              <label for="gasolina">Gasolina</label>
+
+             <input type="radio" name="combustivel" id="etanol" value="etanol">
+             <label for="etanol">Etanol</label>
+
+            <input type="radio" name="combustivel" id="bicombustivel" value="bicombustivel">
+            <label for="bicombustivel">Bicombustível</label>
+
+            <input type="radio" name="combustivel" id="hibrido" value="hibrido">
+            <label for="hibrido">Híbrido</label>
+
+            <input type="radio" name="combustivel" id="eletrico" value="eletrico">
+            <label for="eletrico">Elétrico</label>
+              
+                <button type="submit" id="btn-add">Adicionar</button>
+                <button type="reset" id="btn-limpar">Limpar</button>
+            </form>
+        </div>
+
+        <div id="div-lista-veiculos">
+
+        </div>
+    </div>
     
 </body>
 </html>
